@@ -1,10 +1,10 @@
-package com.example.nutri;
+package nutri.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NutriApplicationTests {
+class ApiApplicationTests {
 
 	@Test
 	void contextLoads() {

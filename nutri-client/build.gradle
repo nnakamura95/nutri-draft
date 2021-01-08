@@ -1,0 +1,32 @@
+plugins {
+    id "com.github.node-gradle.node" version "3.0.0-rc5"
+    id "com.github.ben-manes.versions" version "0.36.0"
+}
+
+
+node {
+    version = '15.2.0'
+    download = true
+    npmInstallCommand = "ci"
+}
+
+task jsBuild(type: NpmTask) {
+    args = ["run", "build"]
+}
+
+task jsLint(type: NpmTask) {
+    args = ["run", "lint"]
+}
+
+task jsServe(type: NpmTask) {
+    args = ["run", "serve"]
+}
+
+task clean {
+    delete 'dist'
+}
+
+npmInstall.dependsOn nodeSetup
+jsLint.dependsOn npmInstall
+jsBuild.dependsOn jsLint
+jsServe.dependsOn npmInstall

@@ -1,3 +1,4 @@
 rootProject.name = 'nutri'
 include 'nutri-api'
 include 'nutri-client'
+include 'database'

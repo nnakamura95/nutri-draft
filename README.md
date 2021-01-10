@@ -9,3 +9,8 @@
 ```
 ./gradlew nutri-api:bootRun
 ```
+### Run PostgreSQL with Docker
+```
+cd docker/nutri-db
+docker-compose up
+```

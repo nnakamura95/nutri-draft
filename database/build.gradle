@@ -1,0 +1,28 @@
+plugins {
+    id "org.flywaydb.flyway" version "${flywayVersion}"
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+flyway {
+    url = 'jdbc:postgresql://localhost:54322/nutri_db'
+    user = 'nutri'
+    password = 'nutri-password'
+}
+
+dependencies {
+    runtime "org.postgresql:postgresql:${postgresqlJdbcVersion}"
+    compile "org.flywaydb:flyway-core:${flywayVersion}"
+}

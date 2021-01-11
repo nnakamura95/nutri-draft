@@ -4,8 +4,8 @@ services:
     image: postgres:13.1-alpine
     container_name: nutri-postgres13.1-alpine
     environment:
-      POSTGRES_USER: nutri
-      POSTGRES_PASSWORD: nutri-password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
     ports:
     - '54322:5432'
     volumes:

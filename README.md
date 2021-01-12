@@ -14,3 +14,16 @@
 cd docker/nutri-db
 docker-compose up
 ```
+- Port: 55432
+- Super User
+  > User: postgres  
+  Password: postgres
+- App User
+  > User: nutri  
+  Password: nutri-password
+
+### Initialize database • Flyway Migration
+```shell
+./gradlew flywayClean
+./gradlew flywayMigrate
+```

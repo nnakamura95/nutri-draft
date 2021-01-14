@@ -14,7 +14,7 @@
 cd docker/nutri-db
 docker-compose up
 ```
-- Port: 55432
+- Port: 5432
 - Super User
   > User: postgres  
   Password: postgres

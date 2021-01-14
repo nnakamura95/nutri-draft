@@ -17,7 +17,7 @@ sourceSets {
 }
 
 flyway {
-    url = 'jdbc:postgresql://localhost:54322/nutri_db'
+    url = 'jdbc:postgresql://localhost:5432/nutri'
     user = 'nutri'
     password = 'nutri-password'
 }

@@ -19,7 +19,7 @@ sourceSets {
 flyway {
     url = 'jdbc:postgresql://localhost:5432/nutri'
     user = 'nutri'
-    password = 'nutri-password'
+    password = 'nutri'
 }
 
 dependencies {

@@ -4,7 +4,7 @@ CREATE SCHEMA client;
 
 SET search_path TO client;
 
-CREATE TABLE client (
+CREATE TABLE data (
                          id       int primary key,
                          client_number varchar UNIQUE NOT NULL,
                          name     varchar,

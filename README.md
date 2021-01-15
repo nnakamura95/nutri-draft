@@ -20,7 +20,7 @@ docker-compose up
   Password: postgres
 - App User
   > User: nutri  
-  Password: nutri-password
+  Password: nutri
 
 ### Initialize database • Flyway Migration
 ```shell

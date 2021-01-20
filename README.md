@@ -1,14 +1,5 @@
 # nutri
 
-### Start vue client command
-```
-./gradlew nutri-client:jsServe
-```
-
-### Run API
-```
-./gradlew nutri-api:bootRun
-```
 ### Run PostgreSQL with Docker
 ```
 cd docker/nutri-db
@@ -23,7 +14,17 @@ docker-compose up
   Password: nutri
 
 ### Initialize database • Flyway Migration
-```shell
+```
 ./gradlew flywayClean
 ./gradlew flywayMigrate
+```
+
+### Start vue client command
+```
+./gradlew nutri-client:jsServe
+```
+
+### Run API
+```
+./gradlew nutri-api:bootRun
 ```

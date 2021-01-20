@@ -1,7 +1,6 @@
 package nutri.api.infrastructure.datasource.client;
 
 import nutri.api.domain.model.Client;
-import nutri.api.domain.model.ClientRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -5,20 +5,18 @@ import java.util.UUID;
 public class Client {
 
     int id;
-    UUID client_number;
+    String clientNumber;
     String name;
     String email;
-    String health_condition;
+    String healthCondition;
 
-    public Client(int id, UUID client_number, String name, String email, String health_condition) {
+
+    public Client(int id, String clientNumber, String name, String email, String healthCondition) {
         this.id = id;
-        this.client_number = client_number;
+        this.clientNumber = UUID.randomUUID().toString();
         this.name = name;
         this.email = email;
-        this.health_condition = health_condition;
-    }
-
-    public Client() {
+        this.healthCondition = healthCondition;
     }
 
     public int getId() {
@@ -29,12 +27,12 @@ public class Client {
         this.id = id;
     }
 
-    public UUID getClient_number() {
-        return client_number;
+    public String getClientNumber() {
+        return clientNumber;
     }
 
-    public void setClient_number(UUID client_number) {
-        this.client_number = client_number;
+    public void setClientNumber(String clientNumber) {
+        this.clientNumber = clientNumber;
     }
 
     public String getName() {
@@ -53,11 +51,12 @@ public class Client {
         this.email = email;
     }
 
-    public String getHealth_condition() {
-        return health_condition;
+    public String getHealthCondition() {
+        return healthCondition;
     }
 
-    public void setHealth_condition(String health_condition) {
-        this.health_condition = health_condition;
+    public void setHealthCondition(String healthCondition) {
+        this.healthCondition = healthCondition;
     }
+
 }

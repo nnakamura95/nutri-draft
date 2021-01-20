@@ -12,6 +12,19 @@ repositories {
     jcenter()
 }
 
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/java'
+        }
+    }
+    test {
+        resources {
+            srcDir 'src/test/java'
+        }
+    }
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 //    implementation 'org.springframework.boot:spring-boot-starter-security'

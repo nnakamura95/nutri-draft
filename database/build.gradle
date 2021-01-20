@@ -23,6 +23,6 @@ flyway {
 }
 
 dependencies {
-    runtime "org.postgresql:postgresql:${postgresqlJdbcVersion}"
-    compile "org.flywaydb:flyway-core:${flywayVersion}"
+    runtimeOnly "org.postgresql:postgresql:${postgresqlJdbcVersion}"
+    implementation "org.flywaydb:flyway-core:${flywayVersion}"
 }

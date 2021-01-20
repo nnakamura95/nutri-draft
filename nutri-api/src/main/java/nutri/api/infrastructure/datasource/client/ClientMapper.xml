@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nutri.api.infrastructure.datasource.client.ClientMapper">
+    <resultMap id="resultClient" type="nutri.api.domain.model.Client">
+        <result property="id" column="id"/>
+        <result property="clientNumber" column="client_number"/>
+        <result property="name" column="name"/>
+        <result property="email" column="email"/>
+        <result property="healthCondition" column="health_condition"/>
+    </resultMap>
+
+
+    <select id="getClientById" parameterType="int" resultMap="resultClient">
+    SELECT
+        id,
+        client_number,
+        name,
+        email,
+        health_condition
+    FROM
+        client.data
+    WHERE
+        id = #{id}
+    </select>
+
+</mapper>

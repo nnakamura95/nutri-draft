@@ -1,4 +1,4 @@
-package nutri.api.infrastructure.datasource.client;
+package nutri.api.domain.model;
 
 import nutri.api.domain.model.Client;
 

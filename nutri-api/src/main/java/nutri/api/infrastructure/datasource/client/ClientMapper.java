@@ -2,6 +2,7 @@ package nutri.api.infrastructure.datasource.client;
 
 import nutri.api.domain.model.Client;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
 
 import java.util.List;
 
@@ -10,9 +11,13 @@ public interface ClientMapper {
 
     Client getClientById(int id);
 
+    @Options(useGeneratedKeys=true, keyProperty="id")
     Client saveClient(Client client);
 
     List<Client> getAllClient();
 
-    Client updateClient(int id, Client client);
+    Client updateClient(int id,
+                        Client client);
+
+    Client deleteClient(int id);
 }

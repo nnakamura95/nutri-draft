@@ -12,4 +12,6 @@ public interface ClientRepository {
     List<Client> getAllClient();
 
     Client updateClient(int id, Client client);
+
+    Client deleteClient(int id);
 }

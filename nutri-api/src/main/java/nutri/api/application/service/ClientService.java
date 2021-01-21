@@ -33,4 +33,8 @@ public class ClientService {
     public Client updateClient(int id, Client client) {
         return clientRepository.updateClient(id, client);
     }
+
+    public Client deleteClient(int id) {
+        return clientRepository.deleteClient(id);
+    }
 }

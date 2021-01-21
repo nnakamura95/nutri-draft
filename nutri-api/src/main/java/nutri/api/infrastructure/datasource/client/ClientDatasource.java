@@ -33,4 +33,9 @@ public class ClientDatasource implements ClientRepository {
     public Client updateClient(int id, Client client) {
         return clientMapper.updateClient(id, client);
     }
+
+    @Override
+    public Client deleteClient(int id) {
+        return clientMapper.deleteClient(id);
+    }
 }

@@ -55,12 +55,18 @@
         UPDATE
             client.data
         SET
-            #{id},
-            #{name},
-            #{email},
-            #{health_condition}
+            name = #{name},
+            email = #{email},
+            health_condition = #{healthCondition}
         WHERE
             #{id}
     </update>
+
+    <delete id="deleteClient">
+        DELETE FROM
+            client.data
+        WHERE
+            id = #{id}
+    </delete>
 
 </mapper>

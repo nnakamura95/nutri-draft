@@ -33,10 +33,16 @@ public class ClientApiController {
         return clientAdded;
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     public Client put(@PathVariable("id") int id , @RequestBody Client client) {
         Client updateClient = clientService.updateClient(id, client);
         return updateClient;
+    }
+
+    @DeleteMapping("/{id}")
+    public Client delete(@PathVariable("id") int id) {
+        Client deleteClient = clientService.deleteClient(id);
+        return deleteClient;
     }
 
 

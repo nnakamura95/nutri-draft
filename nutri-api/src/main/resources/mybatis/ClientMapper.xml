@@ -11,18 +11,56 @@
         <result property="healthCondition" column="health_condition"/>
     </resultMap>
 
-
     <select id="getClientById" parameterType="int" resultMap="resultClient">
-    SELECT
-        id,
-        client_number,
-        name,
-        email,
-        health_condition
-    FROM
-        client.data
-    WHERE
-        id = #{id}
+        SELECT
+            id,
+            client_number,
+            name,
+            email,
+            health_condition
+        FROM
+            client.data
+        WHERE
+            id = #{id}
     </select>
+
+    <select id="getAllClient" resultMap="resultClient">
+        SELECT
+            id,
+            client_number,
+            name,
+            email,
+            health_condition
+        FROM
+            client.data
+    </select>
+    
+    <insert id="saveClient" parameterType="nutri.api.domain.model.Client">
+        INSERT INTO client.data (
+            id,
+            client_number,
+            name,
+            email,
+            health_condition,
+        ) VALUES (
+            nextval('client.client_id_seq'),
+            #{clientNumber},
+            #{name},
+            #{email},
+            #{health_condition}
+        )
+    </insert>
+
+    <update id="updateClient">
+        UPDATE
+            client.data
+        SET
+            #{id},
+            #{name},
+            #{email},
+            #{health_condition}
+        WHERE
+            #{id}
+    </update>
 
 </mapper>

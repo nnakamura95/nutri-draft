@@ -20,3 +20,9 @@ tomcat.8080
 
 # vscode
 .vscode
+
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/dist

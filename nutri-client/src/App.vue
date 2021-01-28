@@ -12,6 +12,8 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap');
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,19 +32,12 @@
   padding: 15px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap');
- .footer p {
+.footer p {
   display: table-cell;
   width: 100%;
   text-align: center;
   font-family: 'M PLUS 1p';
-}
-/*#nav a {*/
-/*  font-weight: bold;*/
-/*  color: #2c3e50;*/
-/*}*/
 
-/*#nav a.router-link-exact-active {*/
-/*  color: #42b983;*/
-/*}*/
+}
+
 </style>

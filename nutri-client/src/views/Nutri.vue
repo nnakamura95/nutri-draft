@@ -10,7 +10,8 @@
         <nav class="menu">
           <ul>
             <li><a href="#">Account</a></li>
-            <li><a href="#">Login • Signup</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Signup</a></li>
           </ul>
         </nav>
       </div>

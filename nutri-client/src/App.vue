@@ -4,7 +4,7 @@
 <!--      <router-link to="/">Home</router-link> |-->
 <!--      <router-link to="/about">About</router-link>-->
 <!--    </div>-->
-    <router-view/>
+    <router-view class="nutri-component"/>
     <div class="footer">
       <p>Copyright © Nutri</p>
     </div>
@@ -26,16 +26,23 @@
   padding: 30px;
 }
 
+.nutri-component {
+  margin-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
 .footer {
-  float: left;
-  width: auto;
-  padding: 15px;
+  margin: 0;
+  padding: 7px;
+  background-color: #dddddd;
 }
 
 .footer p {
   display: table-cell;
   width: 100%;
   text-align: center;
+  font-size: 14px;
   font-family: 'M PLUS 1p';
 
 }

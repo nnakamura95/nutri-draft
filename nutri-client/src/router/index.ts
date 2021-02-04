@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Nutri from '../views/Nutri.vue';
+import MainPage from '@/views/MainPage.vue';
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes: RouteConfig[] = [
     path: '/',
     name: 'Nutri',
     component: Nutri,
+  },
+  {
+    path: '/MainPage',
+    name: 'MainPage',
+    component: MainPage,
   },
   {
     path: '/about',

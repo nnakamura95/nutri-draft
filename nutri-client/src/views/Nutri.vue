@@ -71,7 +71,7 @@ export default class Nutri extends Vue {
 }
 
 .site h1 a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -89,14 +89,14 @@ export default class Nutri extends Vue {
 
 .menu li a {
   display: block;
-  padding: 5px;
-  color: #000000;
+  padding: 10px;
+  color: #ffffff;
   font-size: 14px;
   text-decoration: none;
 }
 
 .menu li a:hover {
-  background-color: #eeeeee;
+  background-color: #808080;
 }
 
 .menu ul:after {
@@ -129,6 +129,11 @@ export default class Nutri extends Vue {
   background-color: #eeeeee;
 }
 
+//global nav bar background color
+.nav-box {
+  background-color: #333333;
+}
+
 @media (min-width: 768px) {
 
   .nav-box:after {
@@ -136,6 +141,12 @@ export default class Nutri extends Vue {
     display: block;
     clear: both;
   }
+
+  .nav-box {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
 
   .box1 {
     float: left;
@@ -156,6 +167,7 @@ export default class Nutri extends Vue {
   }
 
   .box3 {
+    background-color: #f5fffa;
     float: left;
     width: 10%;
   }
@@ -175,5 +187,15 @@ export default class Nutri extends Vue {
 .nav-box, .box5, .box6 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.nav-box {
+  padding-top: 10px;
+  padding-bottom: 10px
+}
+
+.box5, .box6 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 </style>

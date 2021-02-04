@@ -5,9 +5,12 @@
 <!--      <router-link to="/about">About</router-link>-->
 <!--    </div>-->
     <router-view class="nutri-component"/>
-    <div class="footer">
-      <p>Copyright © Nutri</p>
-    </div>
+
+<!--    <footer class="footer">-->
+<!--      <p>Copyright © Nutri</p>-->
+<!--    </footer>-->
+<!--    <div class="footer">-->
+<!--    </div>-->
   </div>
 </template>
 
@@ -26,14 +29,8 @@
   padding: 30px;
 }
 
-.nutri-component {
-  margin-top: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
-}
 
 .footer {
-  margin: 0;
   padding: 7px;
   background-color: #dddddd;
 }

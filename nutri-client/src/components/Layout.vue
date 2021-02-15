@@ -1,12 +1,15 @@
 <template>
-  <router-view />
+
 </template>
 
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator';
 
 @Component
-export default class App extends Vue {
-
+export default class Layout extends Vue {
 }
 </script>
+
+<style scoped>
+
+</style>

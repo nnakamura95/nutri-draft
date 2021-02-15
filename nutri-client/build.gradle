@@ -1,11 +1,11 @@
 plugins {
-    id "com.github.node-gradle.node" version "3.0.0-rc5"
+    id "com.github.node-gradle.node" version "3.0.1"
     id "com.github.ben-manes.versions" version "0.36.0"
 }
 
 
 node {
-    version = '15.2.0'
+    version = '14.15.4'
     download = true
     npmInstallCommand = "ci"
 }

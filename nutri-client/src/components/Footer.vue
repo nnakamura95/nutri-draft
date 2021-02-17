@@ -1,12 +1,16 @@
 <template>
-  <v-footer id="default-footer" color="transparent" absolute app inset>
+  <v-footer
+      id="default-footer"
+      color="transparent"
+      absolute
+      app
+      inset>
     <v-container>
       <v-row align="center">
         <v-col
             v-for="(link, i) in links"
             :key="i"
             class="text-center"
-            cols="7"
             sm="auto"
         >
           <a

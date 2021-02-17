@@ -20,8 +20,8 @@ public class ClientDatasource implements ClientRepository {
     }
 
     @Override
-    public Client saveClient(Client client) {
-        return clientMapper.saveClient(client);
+    public void saveClient(Client client) {
+        clientMapper.saveClient(client);
     }
 
     @Override

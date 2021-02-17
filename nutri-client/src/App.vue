@@ -1,5 +1,7 @@
 <template>
-  <router-view />
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
@@ -10,3 +12,8 @@ export default class App extends Vue {
 
 }
 </script>
+<style lang="scss">
+#app {
+  background-color: #EEEEEE;
+}
+</style>

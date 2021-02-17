@@ -29,8 +29,8 @@ public class ClientApiController {
 
     @PostMapping
     public Client post(@RequestBody Client client) {
-        Client clientAdded= clientService.saveClient(client);
-        return clientAdded;
+        clientService.saveClient(client);
+        return client;
     }
 
     @PutMapping("/{id}")

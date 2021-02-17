@@ -7,7 +7,7 @@ import java.util.List;
 public interface ClientRepository {
     Client getClientById(int id);
 
-    Client saveClient(Client client);
+    void saveClient(Client client);
 
     List<Client> getAllClient();
 

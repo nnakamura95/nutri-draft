@@ -13,7 +13,7 @@ public class Client {
 
     public Client(int id, String clientNumber, String name, String email, String healthCondition) {
         this.id = id;
-        this.clientNumber = UUID.randomUUID().toString();
+        this.clientNumber = UUID.randomUUID().toString().replace("-", "");
         this.name = name;
         this.email = email;
         this.healthCondition = healthCondition;

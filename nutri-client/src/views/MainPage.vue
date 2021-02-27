@@ -75,9 +75,8 @@
           </v-col>
         </v-row>
       </v-container>
-
-      <footer-component/>
     </v-main>
+    <footer-component/>
   </v-app>
 </template>
 
@@ -118,5 +117,7 @@ export default class MainPage extends Vue {
 </script>
 
 <style lang="scss">
+
+
 
 </style>

@@ -1,0 +1,6 @@
+ALTER TABLE client.data
+    ADD COLUMN phone VARCHAR (15),
+    ADD COLUMN date_of_birth DATE NOT NULL,
+    ADD COLUMN age INT NOT NULL,
+    ADD COLUMN gender VARCHAR (10) NOT NULL,
+    ADD COLUMN address VARCHAR (200) NOT NULL;

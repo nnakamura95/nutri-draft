@@ -9,8 +9,7 @@ CREATE TABLE data (
                          client_number varchar UNIQUE NOT NULL,
                          name     varchar,
                          email    varchar,
-                         health_condition varchar,
-                         created_at timestamp without time zone DEFAULT now() NOT NULL
+                         health_condition varchar
 );
 
 CREATE SEQUENCE client_id_seq

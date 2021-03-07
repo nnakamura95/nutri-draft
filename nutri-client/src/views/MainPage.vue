@@ -25,6 +25,19 @@
                   </v-row>
                   <v-row>
                     <v-col
+                        cols="4"
+                        sm="2"
+                    >
+                      <v-select
+                          v-model="client.gender"
+                          :items="gender"
+                          label="Gender"
+                      >
+                      </v-select>
+                    </v-col>
+                  </v-row>
+                  <v-row>
+                    <v-col
                         cols="12"
                         sm="4"
                     >
@@ -41,6 +54,20 @@
                       <v-text-field
                           v-model:value="client.email"
                           label="E-mail"
+                      />
+                    </v-col>
+                  </v-row>
+                  <v-row>
+                    <v-col cols="12" sm="6">
+                      <v-text-field
+                          v-model:value="client.address"
+                          label="Address"
+                      />
+                    </v-col>
+                    <v-col cols="12" sm="6">
+                      <v-text-field
+                          v-model:value="client.phone"
+                          label="Phone"
                       />
                     </v-col>
                   </v-row>
@@ -96,21 +123,34 @@ export default class MainPage extends Vue {
 
   // data
 
+  gender: any = ['male', 'female', 'other'];
+
   private clientDefault: Client = {
     id: 0,
     clientNumber: '',
     name: '',
     email: '',
     healthCondition: '',
+    phone: '',
+    dateOfBirth: '',
+    age: 0,
+    gender: '',
+    address: '',
   };
 
   private client: Client = {...this.clientDefault};
 
   private async save() {
-    await api.saveClient(this.client)
-        .then((response) => {
-          this.client = response;
-        });
+    console.log(this.client.gender)
+    // await api.saveClient(this.client)
+    //     .then((response) => {
+    //       this.client = response;
+    //     });
+  }
+
+
+  private setGender() {
+    this.client.gender = this.gender;
   }
 
 }

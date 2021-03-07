@@ -2,9 +2,6 @@ package nutri.api.infrastructure.datasource.client;
 
 import nutri.api.domain.model.Client;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 
 @Mapper

@@ -9,14 +9,25 @@ public class Client {
     String name;
     String email;
     String healthCondition;
+    String phone;
+    String dataOfBirth;
+    int age;
+    String gender;
+    String address;
 
-
-    public Client(int id, String clientNumber, String name, String email, String healthCondition) {
+    public Client(int id, String clientNumber, String name, String email,
+                  String healthCondition, String phone, String dataOfBirth,
+                  int age, String gender, String address) {
         this.id = id;
-        this.clientNumber = UUID.randomUUID().toString().replace("-", "");
+        this.clientNumber = clientNumber;
         this.name = name;
         this.email = email;
         this.healthCondition = healthCondition;
+        this.phone = phone;
+        this.dataOfBirth = dataOfBirth;
+        this.age = age;
+        this.gender = gender;
+        this.address = address;
     }
 
     public int getId() {
@@ -57,6 +68,46 @@ public class Client {
 
     public void setHealthCondition(String healthCondition) {
         this.healthCondition = healthCondition;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getDataOfBirth() {
+        return dataOfBirth;
+    }
+
+    public void setDataOfBirth(String dataOfBirth) {
+        this.dataOfBirth = dataOfBirth;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
 }

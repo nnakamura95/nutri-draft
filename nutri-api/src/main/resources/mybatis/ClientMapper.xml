@@ -34,20 +34,30 @@
         FROM
             client.data
     </select>
-    
+
     <insert id="saveClient" useGeneratedKeys="true" keyProperty="id" parameterType="nutri.api.domain.model.Client">
         INSERT INTO client.data (
             id,
             client_number,
             name,
             email,
-            health_condition
+            health_condition,
+            phone,
+            date_of_birth,
+            age,
+            gender,
+            address
         ) VALUES (
             nextval('client.client_id_seq'),
             #{clientNumber},
             #{name},
             #{email},
             #{healthCondition}
+            #{phone},
+            #{dateOfBirth},
+            #{age},
+            #{gender},
+            #{address}
         )
     </insert>
 
